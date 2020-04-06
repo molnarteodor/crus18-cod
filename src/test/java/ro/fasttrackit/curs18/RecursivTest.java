@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class RecursivTest {
@@ -18,5 +19,10 @@ public class RecursivTest {
     void ifNullThenException(){
         assertThrows(IllegalArgumentException.class, () -> recursiv.lenght(null));
 
+    }
+    @Test
+    @DisplayName("WHEN empty string is recived THEN 0 is returned")
+    void emptyString() {
+        assertThat(recursiv.lenght("")).isEqualTo(0);
     }
 }
