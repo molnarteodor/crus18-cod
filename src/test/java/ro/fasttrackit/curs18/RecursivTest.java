@@ -25,4 +25,10 @@ public class RecursivTest {
     void emptyString() {
         assertThat(recursiv.lenght("")).isEqualTo(1);
     }
+    @Test
+    @DisplayName("When given a word THEN return its lenght")
+    void forWord() {
+        assertThat(recursiv.lenght("word")).isEqualTo(4);
+    }
+}
 }
