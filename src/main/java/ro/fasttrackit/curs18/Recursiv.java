@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class Recursiv {
     public int lenght(String word) {
-        return 0;
+        if (word == null) throw new IllegalArgumentException("word cannot be null");
+        return 1;
     }
 }
