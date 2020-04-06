@@ -23,6 +23,6 @@ public class RecursivTest {
     @Test
     @DisplayName("WHEN empty string is recived THEN 0 is returned")
     void emptyString() {
-        assertThat(recursiv.lenght("")).isEqualTo(0);
+        assertThat(recursiv.lenght("")).isEqualTo(1);
     }
 }
